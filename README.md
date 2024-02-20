@@ -1,69 +1,61 @@
 
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
-
-## About Laravel
-
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
-
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-=======
 # Biblotheque_en_ligne
 Il s'agit d'un test de recrutement qui consiste à réaliser une application de gestion de bibliothèque en ligne
+# Pré réquis
+Version php : 7.4.19
+Version laravel :8
+Serveur local :laragon
+Base de donné : mysql intégré à laragon.
+On peut aussi utiliser Xamp et son phpmyadmin intégré.
+# Instruction
+1-Créer la base de donné dans mysql (phpmyadmin)
+Nom :bibliotheque
+Username :root
+Mot de passe : 
+2-importez le fichier sql :bibliotheque.sql dans la base de donné avec pou but de créer les tables.
+3-Télécharger le projet zip en accédant à ce lien https://github.com/Zakiyou/Biblotheque_en_ligne.git
+4-Décompresser le zip et placer le dossier(projet) dans le dossier www se situant dans le dossier d’installation de laragon
+3-Lancer le serveur local et accéder l’application via votre navigateur au lien suivant http://localhost/bibliotheque_en_ligne/public/home
+# Test
+  # Utilisateur 
+Se connecter avec les identifiants suivant si vous ne voulez pas créer encore un autre compte pour certaines tâches
+ Email : lionnel@gmail.com
+Mot de passe :lionnelmessi
+1-	La page d’accueil affiche la liste des livres déjà ajoutés par l’administrateur en ligne ;on peut filtrer les livres par catégorie, par auteur  ou  par année. Pour filtrer, il suffit d’entrer la chaine dans l’un des  champs de filtre concerné et vous cliquez sur le bouton «Cliquer ici pour filtrer par catégorie,auteur,année»
+2-	Il y a la possibilité de voir les commentaires et notes en cliquant sur « commentaire et note » 
+Vous êtes rédirigés vers la page affichant les commentaires et note associé au livre et vous avez la possibilité de commenter également en donnant votre note (1/5) :
+Nb :Vous devrez être conneccté,sinon vous êtes redirigés vers la page de connexion.Si vous n’avez pas encore un compte,Cliquez sur « je n’ai pas un compte » pour vous inscrire.Ensuite connectez vous après la création de compte.
+3-	Possibilité également d’ajouter un livre à sa liste de lecture en clique sur « Emprunter ».
+Nb :Vous devrez être conneccté,sinon vous êtes redirigés vers la page de connexion.Si vous n’avez pas encore un compte,Cliquez sur « je n’ai pas un compte » pour vous inscrire.Ensuite connectez vous après la création de compte.
+4-	Une fois connecter ,on peut voir la liste de notre lecture en cliquant sur « Mes emprunts ».
+5-	Une fois qu’on a la liste de notre lecture ,on peut lire un de nos livre en ligne en cliquant sur « Lire ».
+# Administrateur
+Se connecter avec les identifiants suivants :
+Email : zakiyoubababodi@gmail.com
+Mot de passe :bababodizakiyou
+1-Gestion des utilisateur :cliquer sur « Utilisateur »
+- cliquer sur « Nouveau utilisateur » pour ajouter un utilisateur administrateur;
+-Consulter la liste de tout les utilisateurs
+-Effectuer des recherches d’utilisateur par email ou par nom ;
+-Supprimer un utilisateur (une boite de dialogue s’affichera pour demander confirmation de suppression) ;
+2-Gestion des livres :cliquer sur « Livre »
+-Ajouter un livre en cliquant sur « Nouveau livre »
+-Consulter la liste des livres ;
+-Rechercher un livre en fonction de n’importe quel filtre dans le champs de recherche .Entrez juste la chaîne à rechercher et le tout est joué . tout est dynamique et automatique ;
+-Cliquer sur l’icone voir pour visualiser le livre ;
+-Modifier une des informations du livre en cliquant sur l’cone « edit » ;
+-Supprimer un livre en cliquant sur l’icône « delete » ;
+3-Gestion emprunt :cliquer sur « Emprunt »
+-Consulter tout les emprunts éffectués :ici aussi la recherche est dynamyque peut importe le filtre sur lequel on veut éffectuer la recherche ;
+Exemple :entre une catégorie et vous aurez les livres de cette catégorie emprunté,entrez un nom et vous aurez les livres emprunté par le nom entré ;
+-Supprimer un emprunt éffectué en cliquant sur l’icone « delete » ;
+4-Statistique
+-Consulter quelques statistiques  sur le système de gestion des livre
+
+
+
+
+
+
 
