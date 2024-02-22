@@ -10,7 +10,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 //Route pour accéder à Administration Utilisateur
 Route::get('/utilisateur', [App\Http\Controllers\AdministrationUtilisateursController::class, 'getutilisateur'])->name('getutilisateur')->middleware('auth');
 //Route pour ajouter utilisateur POST
-Route::POST('/utilisateur', [App\Http\Controllers\AdministrationUtilisateursController::class, 'AdduserByAdmin'])->name('postutilisateur')->middleware('auth');
+Route::POST('/utilisateur', [App\Http\Controllers\AdministrationUtilisateursController::class, 'AdduserByAdmin'])->name('postutilisateur');
 //Route pour supprimer un utilisateur
 Route::get('utilisateur/sup/{id}', [App\Http\Controllers\AdministrationUtilisateursController::class, 'Deleteuser'])->name('deleteutilisateur')->middleware('auth');
 //Route pour accéder à Administration livre
@@ -32,7 +32,7 @@ Route::get('/mes_emprunts', [App\Http\Controllers\EmpruntController::class, 'mes
 //Route pour lire un livre en ligne
 Route::get('/lire_en_ligne/{id}', [App\Http\Controllers\AdministrationlivreController::class,'lireEnLigne'])->name('lire_en_ligne')->middleware('auth');
 //Route pour liste des emprunts (dashboard)
-Route::get('/liste_emprunts', [App\Http\Controllers\EmpruntController::class, 'listeEmprunts'])->name('liste_emprunts');
+Route::get('/liste_emprunts', [App\Http\Controllers\EmpruntController::class, 'listeEmprunts'])->name('liste_emprunts')->middleware('auth');
 //Route pour supprimer un emprunt (dashboard)
 Route::get('emprunts/sup/{id}', [App\Http\Controllers\EmpruntController::class, 'Deleteemprunt'])->name('deleteemprunt')->middleware('auth');
 
